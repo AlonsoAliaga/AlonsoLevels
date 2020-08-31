@@ -6,7 +6,7 @@ This plugin adds a level system you can use across multiple servers with custom 
 \
 **This plugin does NOT include a quest system.**
 ## Resources
-- [Spigot resource](https://www.spigotmc.org/resources/X/)
+- [Spigot resource](https://www.spigotmc.org/resources/83380/)
 - [Issue tracker](https://github.com/AlonsoAliaga/AlonsoLevels/issues)
 - [Donate](https://paypal.me/AlonsoAliaga)
 - [bStats](https://bstats.org/plugin/bukkit/AlonsoLevels)
