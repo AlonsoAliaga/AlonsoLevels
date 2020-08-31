@@ -1,4 +1,4 @@
-![Logo](IMAGE)
+![Logo](https://i.imgur.com/ZZlHK7n.png)
 
 # AlonsoLevels
 This plugin adds new interesting pets to the game that are always with you, and not using a leash..\
