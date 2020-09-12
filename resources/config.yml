@@ -1,0 +1,379 @@
+#               _   _                  _                _
+#             /_\ | |___ _ _  ___ ___| |   _____ _____| |___
+#           / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-<
+#         /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#
+
+Messages:
+  No-permission: "&cYou don't have permission to do this."
+  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
+  Invalid-player: "&cPlayer is not online!"
+  Invalid-amount: "&cAmount is not a valid number!"
+  Invalid-negative-amount: "&cAmount is not a valid positive number!"
+  Please-reconnect: "&cSomething went wrong. Please reconnect to the server!"
+  Please-reconnect-other: "&cThe player is not registered. {PLAYER} must reconnect to the server!"
+  Disabled-world: "&cYou cannot use this command in your current world."
+  Game-mode-enabled: "&cYou cannot use this command while playing."
+  Only-console: "&cFor security reasons this command can be executed in console only."
+  Claim:
+    Locked-reward: "&cYou cannot claim this reward yet!"
+    Already-claimed-reward: "&cYou already claimed this reward!"
+    Claimed-reward: "&aYou claimed this reward!"
+    Disabled-server: "&cYou cannot claim this reward here! Claim it in {SERVER}."
+  Add-exp:
+    Cancelled: "&cYour action was cancelled by a plugin!"
+    Added-exp: "&aYou added {EXPERIENCE} experience points to {PLAYER}."
+    Notify: " &8+&3{EXPERIENCE} YourNetwork Experience!"
+  Add-random-exp:
+    Cancelled: "&cYour action was cancelled by a plugin!"
+    Added-exp: "&aYou added {EXPERIENCE} experience points to {PLAYER}."
+    Notify: " &8+&3{EXPERIENCE} YourNetwork Experience!"
+  Remove-exp:
+    Cancelled: "&cYour action was cancelled by a plugin!"
+    Removed-exp: "&aYou removed {EXPERIENCE} experience points from {PLAYER}."
+    Notify: " &8-&3{EXPERIENCE} YourNetwork Experience!"
+  Set-exp:
+    Cancelled: "&cYour action was cancelled by a plugin!"
+    Set-exp: "&aYou set {PLAYER}'s experience to {EXPERIENCE}."
+    Notify-add: " &8+&3{EXPERIENCE} YourNetwork Experience!"
+    Notify-remove: " &8-&3{EXPERIENCE} YourNetwork Experience!"
+  Add-level:
+    Cannot-add-zero: "&cYou cannot add {LEVEL} levels to {PLAYER}."
+    Added-level: "&aYou added {LEVEL} level(s) to {PLAYER}."
+    Notify-add: " &8+&3{LEVEL} YourNetwork Level(s)!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork Level(s)!"
+  Remove-level:
+    Cannot-remove-zero: "&cYou cannot add {LEVEL} levels to {PLAYER}."
+    Removed-level: "&aYou removed {LEVEL} level(s) from {PLAYER}."
+    Notify-add: " &8+&3{LEVEL} YourNetwork Level(s)!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork Level(s)!"
+  Set-level:
+    Set-level: "&aYou set {PLAYER}'s level to {LEVEL}."
+    Notify-add: " &8+&3{LEVEL} YourNetwork Level(s)!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork Level(s)!"
+  Reset:
+    Cancelled: "&cYour attempt to reset {PLAYER}'s statistics was cancelled by a plugin."
+    Player-reset: "&a&lYou reset {PLAYER}'s statistics! Player was kicked to save new data."
+    #Reason to kick player to save data. Placeholders {PLAYER} playername, {UUID} player uuid
+    #PlaceholderAPI is supported. However since the player just joined, it might not work correctly.
+    Kick-reason:
+    - "&fInternal Exception: java.io.IOException: An existing connection was forcibly closed by the remote host"
+  Keys:
+    Progress-bar:
+      Amount: 15
+      Character: "■"
+      Complete: "&3"
+      Remaining: "&7"
+    Progress:
+      Format: "&a{LEVEL_EXPERIENCE}&7/&b{REQUIRED_EXPERIENCE}"
+      Max-level: "&c&lMAX LEVEL"
+  Stats:
+    #Supports PlaceholderAPI is available.
+    Self:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "                &aYour statistics!"
+    - "&a "
+    - "  &7Actual level: &a{LEVEL}"
+    - "  &7Next level: &a{NEXT_LEVEL}"
+    - "  &7Progress: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7Current level experience: &a{LEVEL_EXPERIENCE}"
+    - "  &7Experience to level up: &a{REQUIRED_EXPERIENCE}"
+    - "  &7Current total experience: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI is available.
+    Self-max-level:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "           &aYour statistics!"
+    - "             &c&lMAX LEVEL!"
+    - "  &7Actual level: &a{LEVEL}"
+    - "  &7Actual experience: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI is available.
+    Other:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "          &a{PLAYER}'s statistics"
+    - "&a "
+    - "  &7Actual level: &a{LEVEL}"
+    - "  &7Next level: &a{NEXT_LEVEL}"
+    - "  &7Progress: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7Current level experience: &a{LEVEL_EXPERIENCE}"
+    - "  &7Experience to level up: &a{REQUIRED_EXPERIENCE}"
+    - "  &7Current total experience: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI is available.
+    Other-max-level:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "      &a{PLAYER}'s statistics"
+    - "            &c&lMAX LEVEL!"
+    - "  &7Actual level: &a{LEVEL}"
+    - "  &7Actual experience: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+  Level-up:
+    #Leave "" to disable.
+    Title: "&6&lLEVEL UP"
+    #Leave "" to disable.
+    Subtitle: "&r"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Multiplier-unlocked: "{CENTER}&6{MULTIPLIER}x &7Coin Multiplier &aUnlocked&7!"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Max-level-reached: "{CENTER}&cYou have reached max level!"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Open-rewards-not-spigot: "{CENTER}&eOpen rewards menu to claim them"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Open-rewards-spigot: "{CENTER}&eClick here to claim your rewards"
+    Open-rewards-hover: "&eClick to open rewards!"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    #This is a BETA feature and might not work properly.
+    #Supports PlaceholderAPI is available.
+    Message:
+    - "{CENTER}&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "{CENTER}&a&k0&r &6LEVEL UP! &a&k0"
+    - "&r "
+    - "{CENTER}&7You are now &3YourNetwork Level &a{LEVEL}&7!"
+    - "{MAX_LEVEL}"
+    - "&r "
+    - "{UNLOCKED}\n"
+    - "{REWARDS}"
+    - "{CENTER}&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+Inventories:
+  Normal:
+    Title: "&8YourNetwork Leveling"
+  Veteran:
+    Title: "&8Veteran Rewards"
+
+Items:
+  Rewards:
+    Normal:
+      Locked-material: CHEST_MINECART
+      Unlocked-material: CHEST_MINECART
+      Claimed-material: MINECART
+      Locked:
+        Material: "CUSTOM_HEAD" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"
+      Unlocked:
+        Material: "CUSTOM_HEAD" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJjNWY3YWM3MDZiMmU4YTg3OGViZjk3MmIwN2YzZDM2NDQ5YWI3MGIwOWFjZDk3M2VlYWJiMGQ1ZmM0YTZiNCJ9fX0="
+      Claimed:
+        Material: "CUSTOM_HEAD" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19"
+    Veteran:
+      Locked-material: TNT_MINECART
+      Unlocked-material: TNT_MINECART
+      Claimed-material: MINECART
+      Locked:
+        Material: "TNT_MINECART" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiZDg3Y2Q4YzE0N2U3NmM1N2UxYmI1NDE1YmJjYzU0YjhjNDNjNTYxNzc2NzcyNTczMjNjZDI2OWFlNCJ9fX0="
+      Unlocked:
+        Material: "TNT_MINECART" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhY2ZjNjQzZjYwOGUxNmRlMTkzMzVkZGNhNzFhODI4ZGZiOGRhY2E1NzkzZWI1YmJjYjBjN2QxNTU5MjQ5In19fQ=="
+      Claimed:
+        Material: "MINECART" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19"
+    Locked-lore:
+    - ""
+    - "&cYou can't claim this yet!"
+    Unlocked-lore:
+    - ""
+    - "&eClick to claim!"
+    Claimed-lore:
+    - ""
+    - "&aYou have already claimed this reward!"
+  Multipliers:
+    Locked-material: COAL_BLOCK
+    Unlocked-material: GOLD_BLOCK
+    Locked:
+      Material: "COAL_BLOCK" #Supports "CUSTOM_HEAD"
+      #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+      Custom-model-data: 0
+      #Only available if material is CUSTOM_HEAD
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRhN2RmMGM2NzYxNjMwNWNlZTI5ZTRlYTJlMzQwNjE1NDYzNjY5NWVmZWY5ZmY3MzVlZmQwMDc0YjAwMjg0YSJ9fX0="
+    Unlocked:
+      Material: "GOLD_BLOCK" #Supports "CUSTOM_HEAD"
+      #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+      Custom-model-data: 0
+      #Only available if material is CUSTOM_HEAD
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ1ZjQ3ZmViNGQ3NWNiMzMzOTE0YmZkYjk5OWE0ODljOWQwZTMyMGQ1NDhmMzEwNDE5YWQ3MzhkMWUyNGI5In19fQ=="
+    Displayname: "&6{MULTIPLIER}x {COLOR}Coin Multiplier"
+    Lore:
+    - ""
+    - "&7Increases the amount of coins you"
+    - "&7earn when playing games."
+    - ""
+    - "&8Automatically unlocks upon reaching"
+    - "&8the required level."
+    Locked-lore:
+    - ""
+    - "&cYou must be level {LEVEL} to unlock"
+    - "&cthis perk."
+    Unlocked-lore:
+    - ""
+    - "&aUnlocked!"
+    Veteran:
+      Material: BEACON #Supports "CUSTOM_HEAD"
+      #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+      Custom-model-data: 0
+      #Only available if material is CUSTOM_HEAD
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI2NWY5NmY1NGI3ODg4NWM0NmU3ZDJmODZiMWMxZGJmZTY0M2M2MDYwZmM3ZmNjOTgzNGMzZTNmZDU5NTEzNSJ9fX0="
+      Displayname: "&6Veteran Rewards"
+      Lore:
+      - "&7Rewards for the most dedicated"
+      - "&7players!"
+      Locked:
+      - ""
+      - "&cYou must be YourNetwork Level {LEVEL} or"
+      - "&chigher to access this menu!"
+      Unlocked:
+      - ""
+      - "&eClick to open veteran rewards!"
+  Previous:
+    Material: ARROW #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3M2NmNjZkMzFiODNjZDhiODY0NGMxNTk1OGMxYjczYzhkOTczMjNiODAxMTcwYzFkODg2NGJiNmE4NDZkIn19fQ=="
+    Displayname: "&aPrevious page"
+  Next:
+    Material: ARROW #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg2MTg1YjFkNTE5YWRlNTg1ZjE4NGMzNGYzZjNlMjBiYjY0MWRlYjg3OWU4MTM3OGU0ZWFmMjA5Mjg3In19fQ=="
+    Displayname: "&aNext page"
+  Back:
+    Material: ARROW #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+    Displayname: "&aVolver"
+    #This command will be run BY THE PLAYER when back button is clicked. "none" to disable.
+    #In case you need to use {PLAYER} to replace with player name or {UUID} with player uuid.
+    Command: "none"
+  Extra:
+    Material: ENCHANTED_BOOK #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0="
+    Displayname: "&aQuests & Challenges"
+    #Supports PlaceholderAPI is available
+    Lore:
+    - "&7Completing quests and challenges"
+    - "&7will reward you with &6Coins&7, &3YourNetwork"
+    - "&3Experience &7and more!"
+    - ""
+    - "&7You can complete a maximum of &a10"
+    - "&7challenges every day."
+    - ""
+    - "&7Challenges completed today: &a%placeholder_quest%"
+    - ""
+    - "&eClick to view Quests & Challenges"
+    #This command will be run BY THE PLAYER when Extra button is clicked (in slot 50). "none" to disable.
+    #In case you need to use {PLAYER} to replace with player name or {UUID} with player uuid.
+    Command: "none"
+  Main:
+    Material: BREWING_STAND
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNlZGIyZjRjOTcwMTZjYWU3Yjg5ZTRjNmQ2OTc4ZDIyYWMzNDc2YzgxNWM1YTA5YTY3OTI0NTBkZDkxOGI2YyJ9fX0="
+    Displayname: "&aYourNetwork Leveling"
+    #Supports PlaceholderAPI is available.
+    Lore:
+    - "&7Playing games and completing quests"
+    - "&7will received you with &3YourNetwork"
+    - "&3Experience&7, which is required to level"
+    - "&7up and acquire new perks and rewards!"
+    - ""
+    - "&3YourNetwork &a%alonsolevels_level% %alonsolevels_progress_bar% %alonsolevels_progress_percent%%"
+    - ""
+    - "&7Experience until next level: &3%alonsolevels_experience_to_level_up%"
+    - ""
+    - "&eClick to see your rewards!"
+
+Options:
+  #What's the name of this server? Will be used to disable rewards if they are restricted to specific servers.
+  Server: "Lobby"
+  #Max level for players to level up. Recommended to leave it as 500.
+  Max-level: 300
+  #LEVEL will be replaced with the actual level.
+  #Example: "(LEVEL-1) * 300" means that for:
+  #Level 1 = exp required is always 0.
+  #Level 2 = (2-1)*300 = 300 exp required
+  #Level 3 = (3-1)*300 = 600 exp required
+  #an so on..
+  #WARNING: This formula is processed internally using eval methods.
+  #That means that it can be used to modify everything internally if not used with caution.
+  #That includes files, folders, etc. Make sure only YOU have access to this. You have been WARNED!
+  #Recommended to leave this as default, it's based on the big network formula.
+  Exp-formula: "1250*(Math.pow(LEVEL,2))+ (6250*LEVEL) - 7500"
+  #Required level to access veteran inventory (rewards - multipliers)
+  Veteran-inventory: 100
+  #Disable commands for normal users. (Players without admin permission)
+  #Useful if you are using one server for each game like the big network.
+  #If you are using multi-arena minigames or similar systems leave it as false and use "Disabled-worlds"
+  Game-mode: false
+  #Worlds in which normal users CAN perform commands related to this plugin so they cannot open
+  #rewards gui or check statistics while playing in a map.
+  #This doesn't affect players with admin permission.
+  #Option useful to restrict the usage of commands for normal players in servers like Skywars or minigames.
+  Enabled-worlds:
+  - "lobby"
+  - "main_lobby"
+  - "world"
+  #This will kick the player as soon as he joins if the data couldn't be loaded. (Or there was an error in database)
+  Kick-on-fail:
+    Enabled: true
+    Reason:
+    #Support PlaceholderAPI, it might not properly with many plugins because is most likely that
+    #the placeholders are not loading at the moment the player is kicked. (because he just joined)
+    #Available placeholders: {PLAYER} player name, {UUID} player uuid
+    - "&cCouldn't load/register information."
+    - "&fPlease reconnect to the server."
+    - "&r"
+    - "&7If problem persists contact an administrator."
+
+
+Permissions:
+  Admin: "alonsolevels.admin"
+  Stats-others: "alonsolevels.stats.others"
+
+Database:
+  #Available types: MySQL and SQLite
+  #You can use MySQL to make it global or you can use SQLite to make it local.
+  #MySQL requires a server (local or external)
+  #SQLite doesn't require anything, it's saved in a db file in the folder.
+  Type: "SQLite"
+  Table: "alonsolevels"
+  #If type is SQLite
+  File: "database-alonsolevels"
+  #If type is MySQL
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "alonsolevels"
+  Username: "root"
+  Password: "12345"
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "alonsolevels.update"
+  #Message to send when update is found.
+  Message: "&3[AlonsoLevels] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
