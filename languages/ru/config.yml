@@ -1,0 +1,320 @@
+#               _   _                  _                _
+#             /_\ | |___ _ _  ___ ___| |   _____ _____| |___
+#           / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-<
+#         /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/
+#
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#
+#                      Перевод сделал Flaimer'ом:
+#                https://spigotmc.ru/members/flaimer.801/
+
+Messages:
+  No-permission: "&cУ вас нет разрешения на это."
+  Reloaded: "&aНекоторые сообщения и параметры были перезагружены. Остайное может потребовать перезагрузки!"
+  Invalid-player: "&cИгрок не в сети!"
+  Invalid-amount: "&cСумма не является действительным числом!"
+  Invalid-negative-amount: "&cСумма не является действительным положительным числом!"
+  Please-reconnect: "&cЧто-то пошло не так. Пожалуйста, повторно подключитесь к серверу!"
+  Please-reconnect-other: "&cИгрок не зарегистрирован. {PLAYER} необходимо повторно подключиться к серверу!"
+  Disabled-world: "&cВы не можете использовать эту команду в вашем текущем мире."
+  Game-mode-enabled: "&cВы не можете использовать эту команду во время игры."
+  Only-console: "&cДля безопасности эту команду можно выполнять только в консоли."
+  Claim:
+    Locked-reward: "&cВы пока не можете получить эту награду!"
+    Already-claimed-reward: "&cВы уже получили эту награду!"
+    Claimed-reward: "&aВы получили эту награду!"
+    Disabled-server: "&cВы не можете получить эту награду здесь! Получить награду можно на сервере {SERVER}."
+  Add-exp:
+    Cancelled: "&cВаше действие было отменено плагином!"
+    Added-exp: "&aВы добавили {EXPERIENCE} опыта игроку {PLAYER}."
+    Notify: " &8+&3{EXPERIENCE} YourNetwork опыт!"
+  Add-random-exp:
+    Cancelled: "&cВаше действие было отменено плагином!"
+    Added-exp: "&aВы добавили {EXPERIENCE} опыта игроку {PLAYER}."
+    Notify: " &8+&3{EXPERIENCE} YourNetwork опыт!"
+  Remove-exp:
+    Cancelled: "&cВаше действие было отменено плагином!"
+    Removed-exp: "&aВы убрали {EXPERIENCE} опыта у игрока {PLAYER}."
+    Notify: " &8-&3{EXPERIENCE} YourNetwork опыт!"
+  Set-exp:
+    Cancelled: "&cВаше действие было отменено плагином!"
+    Set-exp: "&aВы установили {EXPERIENCE} опыта игроку {PLAYER}."
+    Notify-add: " &8+&3{EXPERIENCE} YourNetwork опыта!"
+    Notify-remove: " &8-&3{EXPERIENCE} YourNetwork опыта!"
+  Add-level:
+    Cannot-add-zero: "&cВы не можете добавить {LEVEL} уровней игроку {PLAYER}."
+    Added-level: "&aВы добавили {LEVEL} уровней игроку {PLAYER}."
+    Notify-add: " &8+&3{LEVEL} YourNetwork уровней!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork уровней!"
+  Remove-level:
+    Cannot-remove-zero: "&cВы не можете добавить {LEVEL} уровней игроку {PLAYER}."
+    Removed-level: "&aВы убрали {LEVEL} уровней у игрока {PLAYER}."
+    Notify-add: " &8+&3{LEVEL} YourNetwork уровней!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork уровней!"
+  Set-level:
+    Set-level: "&aВы установили {LEVEL} уровней игроку {PLAYER}."
+    Notify-add: " &8+&3{LEVEL} YourNetwork уровней!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork уровней!"
+  Reset:
+    Cancelled: "&cYour attempt to reset {PLAYER}'s statistics was cancelled by a plugin."
+    Player-reset: "&a&lYou reset {PLAYER}'s statistics! Player was kicked to save new data."
+    #Reason to kick player to save data. Placeholders {PLAYER} playername, {UUID} player uuid
+    #PlaceholderAPI is supported. However since the player just joined, it might not work correctly.
+    Kick-reason:
+    - "&fInternal Exception: java.io.IOException: An existing connection was forcibly closed by the remote host"
+  Keys:
+    Progress-bar:
+      Amount: 15
+      Character: "■"
+      Complete: "&3"
+      Remaining: "&7"
+    Progress:
+      Format: "&a{LEVEL_EXPERIENCE}&7/&b{REQUIRED_EXPERIENCE}"
+      Max-level: "&c&lМАКС УРОВЕНЬ"
+  Stats:
+    #Supports PlaceholderAPI is available.
+    Self:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "                &aВаша статистика!"
+    - "&a "
+    - "  &7Ваш уровень: &a{LEVEL}"
+    - "  &7Следующий: &a{NEXT_LEVEL}"
+    - "  &7Прогресс: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7Текущий уровень опыта: &a{LEVEL_EXPERIENCE}"
+    - "  &7Нужна опыта для повышения уровня: &a{REQUIRED_EXPERIENCE}"
+    - "  &7Текущий общий опыт: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI is available.
+    Self-max-level:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "           &aВаша статистика!"
+    - "             &c&lМаксимальный уровень!"
+    - "  &7Ваш уровень: &a{LEVEL}"
+    - "  &7Фактический опыт: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI is available.
+    Other:
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "          &7статистика игрока &a{PLAYER}"
+    - "&a "
+    - "  &7Уровень: &a{LEVEL}"
+    - "  &7Следующий уровень: &a{NEXT_LEVEL}"
+    - "  &7Прогресс: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7Текущий уровень опыта: &a{LEVEL_EXPERIENCE}"
+    - "  &7Нужна опыта для повышения уровня: &a{REQUIRED_EXPERIENCE}"
+    - "  &7Текущий общий опыт: &a{TOTAL_EXPERIENCE}"
+    - "&3&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    #Supports PlaceholderAPI is available.
+    Other-max-level:
+    - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "      &7статистика игрока &a{PLAYER}"
+    - "            &c&lМаксимальный уровень!"
+    - "  &7Уровень: &a{LEVEL}"
+    - "  &7Фактический опыт: &a{TOTAL_EXPERIENCE}"
+    - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+  Level-up:
+    #Leave "" to disable.
+    Title: "&6&lУровень поднят"
+    #Leave "" to disable.
+    Subtitle: "&r"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Multiplier-unlocked: "{CENTER}&6{MULTIPLIER}x &7Множитель монет &aРазблокирован&7!"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Max-level-reached: "{CENTER}&cВы достигли максимального уровня!"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Open-rewards-not-spigot: "{CENTER}&eОткройте меню наград, чтобы получить их"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    Open-rewards-spigot: "{CENTER}&eНажмите здесь, чтобы получить награды"
+    Open-rewards-hover: "&eНажмите, чтобы открыть меню наград!"
+    #{CENTER} can be used here to attempt to center the message in THIS MESSAGE.
+    #This is a BETA feature and might not work properly.
+    #Supports PlaceholderAPI is available.
+    Message:
+    - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "&a&k0&r &6Уровень поднялся! &a&k0"
+    - "&r "
+    - "&7Сейчас &3YourNetwork Уровень &a{LEVEL}&7!"
+    - "{MAX_LEVEL}"
+    - "&r "
+    - "{UNLOCKED}\n"
+    - "{REWARDS}"
+    - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+Inventories:
+  Normal:
+    Title: "&8YourNetwork уровни"
+  Veteran:
+    Title: "&8Награды для Ветеранов"
+
+Items:
+  Rewards:
+    Normal:
+      Locked-material: CHEST_MINECART
+      Unlocked-material: CHEST_MINECART
+      Claimed-material: MINECART
+    Veteran:
+      Locked-material: TNT_MINECART
+      Unlocked-material: TNT_MINECART
+      Claimed-material: MINECART
+    Locked-lore:
+    - ""
+    - "&cВы еще не можете претендовать на это!"
+    Unlocked-lore:
+    - ""
+    - "&eНажмите, чтобы получить!"
+    Claimed-lore:
+    - ""
+    - "&aВы уже получили эту награду!"
+  Multipliers:
+    Locked-material: COAL_BLOCK
+    Unlocked-material: GOLD_BLOCK
+    Displayname: "&6{MULTIPLIER}x {COLOR}Множитель монет"
+    Lore:
+    - ""
+    - "&7Увеличивает количество монет для вас"
+    - "&7играя в мини-игры."
+    - ""
+    - "&8Автоматически разблокируется при достижении"
+    - "&8требуемого уровня."
+    Locked-lore:
+    - ""
+    - "&cВы должны имеет уровень {LEVEL} для открытия"
+    - "&cданной перки."
+    Unlocked-lore:
+    - ""
+    - "&aРазблокирован!"
+    Veteran:
+      Material: BEACON
+      Displayname: "&6Награды для ветеранов"
+      Lore:
+      - "&7Награды для самых преданных"
+      - "&7игроков!"
+      Locked:
+      - ""
+      - "&cУ вас должен быть уровень YourNetwork {LEVEL}"
+      - "&cили выше, чтобы получить доступ к этому меню!"
+      Unlocked:
+      - ""
+      - "&eНажмите, чтобы открыть награды для ветеранов!"
+  Previous:
+    Material: ARROW
+    Displayname: "&aПредыдущая страница"
+  Next:
+    Material: ARROW
+    Displayname: "&aСледующая страница"
+  Back:
+    Material: ARROW
+    Displayname: "&aНазад"
+    #This command will be run BY THE PLAYER when back button is clicked. "none" to disable.
+    #In case you need to use {PLAYER} to replace with player name or {UUID} with player uuid.
+    Command: "none"
+  Extra:
+    Material: ENCHANTED_BOOK
+    Displayname: "&aКвесты и испытания"
+    #Supports PlaceholderAPI is available
+    Lore:
+    - "&7Выполнение квестов и испытаний"
+    - "&7наградит вас &6монетами&7, &3YourNetwork"
+    - "&3опытом &7и многим другим!"
+    - ""
+    - "&7Вы можете выполнить максимум &a10"
+    - "&7испытаний в каждый день."
+    - ""
+    - "&7Испытание завершены сегодня: &a%placeholder_quest%"
+    - ""
+    - "&eНажмите, чтобы просмотреть квесты и испытания"
+    #This command will be run BY THE PLAYER when Extra button is clicked (in slot 50). "none" to disable.
+    #In case you need to use {PLAYER} to replace with player name or {UUID} with player uuid.
+    Command: "none"
+  Main:
+    Material: BREWING_STAND
+    Displayname: "&aYourNetwork Уровни"
+    #Supports PlaceholderAPI is available.
+    Lore:
+    - "&7Играя в мини-игры и выполняя квесты"
+    - "&7вы будете получать &3YourNetwork"
+    - "&3опыт&7, что требуется для повышения"
+    - "&7уровня и получение новых перак и наград!"
+    - ""
+    - "&3YourNetwork &a%alonsolevels_level% %alonsolevels_progress_bar% %alonsolevels_progress_percent%%"
+    - ""
+    - "&7Нужно опыта для следующего уровня: &3%alonsolevels_experience_to_level_up%"
+    - ""
+    - "&eНажмите, чтобы увидеть свои награды!"
+
+Options:
+  #What's the name of this server? Will be used to disable rewards if they are restricted to specific servers.
+  Server: "Lobby"
+  #Max level for players to level up. Recommended to leave it as 500.
+  Max-level: 300
+  #LEVEL will be replaced with the actual level.
+  #Example: "(LEVEL-1) * 300" means that for:
+  #Level 1 = exp required is always 0.
+  #Level 2 = (2-1)*300 = 300 exp required
+  #Level 3 = (3-1)*300 = 600 exp required
+  #an so on..
+  #WARNING: This formula is processed internally using eval methods.
+  #That means that it can be used to modify everything internally if not used with caution.
+  #That includes files, folders, etc. Make sure only YOU have access to this. You have been WARNED!
+  #Recommended to leave this as default, it's based on the big network formula.
+  Exp-formula: "1250*(Math.pow(LEVEL,2))+ (6250*LEVEL) - 7500"
+  #Required level to access veteran inventory (rewards - multipliers)
+  Veteran-inventory: 100
+  #Disable commands for normal users. (Players without admin permission)
+  #Useful if you are using one server for each game like the big network.
+  #If you are using multi-arena minigames or similar systems leave it as false and use "Disabled-worlds"
+  Game-mode: false
+  #Worlds in which normal users CAN perform commands related to this plugin so they cannot open
+  #rewards gui or check statistics while playing in a map.
+  #This doesn't affect players with admin permission.
+  #Option useful to restrict the usage of commands for normal players in servers like Skywars or minigames.
+  Enabled-worlds:
+  - "lobby"
+  - "main_lobby"
+  - "world"
+  #This will kick the player as soon as he joins if the data couldn't be loaded. (Or there was an error in database)
+  Kick-on-fail:
+    Enabled: true
+    Reason:
+    #Support PlaceholderAPI, it might not properly with many plugins because is most likely that
+    #the placeholders are not loading at the moment the player is kicked. (because he just joined)
+    #Available placeholders: {PLAYER} player name, {UUID} player uuid
+    - "&cCouldn't load/register information."
+    - "&fPlease reconnect to the server."
+    - "&r"
+    - "&7If problem persists contact an administrator."
+
+
+Permissions:
+  Admin: "alonsolevels.admin"
+  Stats-others: "alonsolevels.stats.others"
+
+Database:
+  #Available types: MySQL and SQLite
+  #You can use MySQL to make it global or you can use SQLite to make it local.
+  #MySQL requires a server (local or external)
+  #SQLite doesn't require anything, it's saved in a db file in the folder.
+  Type: "MySQL"
+  Table: "alonsolevels"
+  #If type is SQLite
+  File: "database-alonsolevels"
+  #If type is MySQL
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "danuk2020"
+  Username: "root"
+  Password: "root"
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "alonsolevels.update"
+  #Message to send when update is found.
+  Message: "&3[AlonsoLevels] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
