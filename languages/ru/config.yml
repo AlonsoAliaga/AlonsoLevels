@@ -2,11 +2,10 @@
 #             /_\ | |___ _ _  ___ ___| |   _____ _____| |___
 #           / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-<
 #         /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/
-#
 #                           by AlonsoAliaga
 #          https://www.spigotmc.org/resources/authors/281176/
 #
-#                      Перевод сделал Flaimer'ом:
+#                      Перевод сделан Flaimer'ом:
 #                https://spigotmc.ru/members/flaimer.801/
 
 Messages:
@@ -20,6 +19,29 @@ Messages:
   Disabled-world: "&cВы не можете использовать эту команду в вашем текущем мире."
   Game-mode-enabled: "&cВы не можете использовать эту команду во время игры."
   Only-console: "&cДля безопасности эту команду можно выполнять только в консоли."
+  Help:
+    Admin:
+    - "&6 /alonsolevels rewards <игрок> &f- &eОткрыть награды игроку"
+    - "&6 /alonsolevels stats <игрок> &f- &eПосмотреть статистику игрока"
+    - "&6 /alonsolevels reset <игрок> &f- &eУдалить информацию об игрока из плагина &c(Только консоль)"
+    - "&6 /alonsolevels addexp <игрок> <сумма> &f- &eДобавить опыт игроку"
+    - "&6 /alonsolevels addrandomexp <игрок> <мин> <макс> &f- &eДобавить рандомный опыт игроку"
+    - "&6 /alonsolevels removeexp <игрок> <сумма> &f- &eУбрать опыт игроку"
+    - "&6 /alonsolevels setexp <игрок> <сумма> &f- &eУстановить опыт игроку"
+    - "&6 /alonsolevels addlevel <игрок> <сумма> &f- &eДобавить уровень игроку"
+    - "&6 /alonsolevels removelevel <игрок> <сумма> &f- &eУбрать уровень игроку"
+    - "&6 /alonsolevels setlevel <игрок> <level> &f- &eУстановить уровень игроку"
+    - "&6 /alonsolevels reload &f- &eПерезагрузить конфиг"
+    User:
+    - "&6 /alonsolevels rewards &f- &eОткрыть меню с наградоми"
+    - "&6 /alonsolevels stats &f- &eПосмотреть твою статистику"
+  Placeholders:
+    Multiplier:
+      None: "&7{MULTIPLIER}"
+      Multiplier: "&6{MULTIPLIER}"
+    Additional-multiplier:
+      None: "&7+{MULTIPLIER}"
+      Multiplier: "&6+{MULTIPLIER}"
   Claim:
     Locked-reward: "&cВы пока не можете получить эту награду!"
     Already-claimed-reward: "&cВы уже получили эту награду!"
@@ -151,13 +173,43 @@ Inventories:
 Items:
   Rewards:
     Normal:
-      Locked-material: CHEST_MINECART
-      Unlocked-material: CHEST_MINECART
-      Claimed-material: MINECART
+      Locked:
+        Material: "CUSTOM_HEAD" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"
+      Unlocked:
+        Material: "CUSTOM_HEAD" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJjNWY3YWM3MDZiMmU4YTg3OGViZjk3MmIwN2YzZDM2NDQ5YWI3MGIwOWFjZDk3M2VlYWJiMGQ1ZmM0YTZiNCJ9fX0="
+      Claimed:
+        Material: "CUSTOM_HEAD" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19"
     Veteran:
-      Locked-material: TNT_MINECART
-      Unlocked-material: TNT_MINECART
-      Claimed-material: MINECART
+      Locked:
+        Material: "TNT_MINECART" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiZDg3Y2Q4YzE0N2U3NmM1N2UxYmI1NDE1YmJjYzU0YjhjNDNjNTYxNzc2NzcyNTczMjNjZDI2OWFlNCJ9fX0="
+      Unlocked:
+        Material: "TNT_MINECART" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhY2ZjNjQzZjYwOGUxNmRlMTkzMzVkZGNhNzFhODI4ZGZiOGRhY2E1NzkzZWI1YmJjYjBjN2QxNTU5MjQ5In19fQ=="
+      Claimed:
+        Material: "MINECART" #Supports "CUSTOM_HEAD"
+        #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+        Custom-model-data: 0
+        #Only available if material is CUSTOM_HEAD
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19"
     Locked-lore:
     - ""
     - "&cВы еще не можете претендовать на это!"
@@ -168,8 +220,18 @@ Items:
     - ""
     - "&aВы уже получили эту награду!"
   Multipliers:
-    Locked-material: COAL_BLOCK
-    Unlocked-material: GOLD_BLOCK
+    Locked:
+      Material: "COAL_BLOCK" #Supports "CUSTOM_HEAD"
+      #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+      Custom-model-data: 0
+      #Only available if material is CUSTOM_HEAD
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRhN2RmMGM2NzYxNjMwNWNlZTI5ZTRlYTJlMzQwNjE1NDYzNjY5NWVmZWY5ZmY3MzVlZmQwMDc0YjAwMjg0YSJ9fX0="
+    Unlocked:
+      Material: "GOLD_BLOCK" #Supports "CUSTOM_HEAD"
+      #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+      Custom-model-data: 0
+      #Only available if material is CUSTOM_HEAD
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ1ZjQ3ZmViNGQ3NWNiMzMzOTE0YmZkYjk5OWE0ODljOWQwZTMyMGQ1NDhmMzEwNDE5YWQ3MzhkMWUyNGI5In19fQ=="
     Displayname: "&6{MULTIPLIER}x {COLOR}Множитель монет"
     Lore:
     - ""
@@ -186,7 +248,11 @@ Items:
     - ""
     - "&aРазблокирован!"
     Veteran:
-      Material: BEACON
+      Material: BEACON #Supports "CUSTOM_HEAD"
+      #Supported in 1.14+ ONLY if you wanna use a custom resource pack
+      Custom-model-data: 0
+      #Only available if material is CUSTOM_HEAD
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI2NWY5NmY1NGI3ODg4NWM0NmU3ZDJmODZiMWMxZGJmZTY0M2M2MDYwZmM3ZmNjOTgzNGMzZTNmZDU5NTEzNSJ9fX0="
       Displayname: "&6Награды для ветеранов"
       Lore:
       - "&7Награды для самых преданных"
@@ -199,19 +265,27 @@ Items:
       - ""
       - "&eНажмите, чтобы открыть награды для ветеранов!"
   Previous:
-    Material: ARROW
+    Material: ARROW #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3M2NmNjZkMzFiODNjZDhiODY0NGMxNTk1OGMxYjczYzhkOTczMjNiODAxMTcwYzFkODg2NGJiNmE4NDZkIn19fQ=="
     Displayname: "&aПредыдущая страница"
   Next:
-    Material: ARROW
-    Displayname: "&aСледующая страница"
+    Material: ARROW #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg2MTg1YjFkNTE5YWRlNTg1ZjE4NGMzNGYzZjNlMjBiYjY0MWRlYjg3OWU4MTM3OGU0ZWFmMjA5Mjg3In19fQ=="
+    Displayname: "&Следующая страница"
   Back:
-    Material: ARROW
+    Material: ARROW #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
     Displayname: "&aНазад"
     #This command will be run BY THE PLAYER when back button is clicked. "none" to disable.
     #In case you need to use {PLAYER} to replace with player name or {UUID} with player uuid.
     Command: "none"
   Extra:
-    Material: ENCHANTED_BOOK
+    Material: ENCHANTED_BOOK #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0="
     Displayname: "&aКвесты и испытания"
     #Supports PlaceholderAPI is available
     Lore:
@@ -229,7 +303,9 @@ Items:
     #In case you need to use {PLAYER} to replace with player name or {UUID} with player uuid.
     Command: "none"
   Main:
-    Material: BREWING_STAND
+    Material: BREWING_STAND #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNlZGIyZjRjOTcwMTZjYWU3Yjg5ZTRjNmQ2OTc4ZDIyYWMzNDc2YzgxNWM1YTA5YTY3OTI0NTBkZDkxOGI2YyJ9fX0="
     Displayname: "&aYourNetwork Уровни"
     #Supports PlaceholderAPI is available.
     Lore:
@@ -243,6 +319,20 @@ Items:
     - "&7Нужно опыта для следующего уровня: &3%alonsolevels_experience_to_level_up%"
     - ""
     - "&eНажмите, чтобы увидеть свои награды!"
+  #This item will be the replacement for "Veteran" item. if Options.Veteran-rewards is set to false.
+  #If Veteran-rewards is true this will be IGNORED.
+  Veteran-replacement:
+    Enabled: true
+    Material: CUSTOM_HEAD #Supports "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJkODQ3YjJjNzk4Njc4ZmQ1MmIwZTczNDhkY2Y5ZjUyMmY4NmE5Nzk4ZGE5YmIwM2NkZmJiYTI5MTFkZWM2NiJ9fX0="
+    Displayname: "&bВы лучшие!"
+    #Supports PlaceholderAPI is available.
+    Lore:
+    - "&7Спасибо за игру на сервере %player_name%!"
+    #Command to run when clicking the item. Set to "none" to disable.
+    #Available placeholder are {PLAYER} and {UUID}
+    Command: "none"
 
 Options:
   #What's the name of this server? Will be used to disable rewards if they are restricted to specific servers.
@@ -285,7 +375,13 @@ Options:
     - "&fPlease reconnect to the server."
     - "&r"
     - "&7If problem persists contact an administrator."
-
+  Veteran-rewards:
+    #If false, item for veteran rewards will not be displayed.
+    Enabled: true
+  Debug:
+    #If true, some checks will be sent in console. If false, spam will not be sent.
+    #Currently includes level/required experience spam when plugin starts.
+    Enabled: true
 
 Permissions:
   Admin: "alonsolevels.admin"
@@ -296,16 +392,19 @@ Database:
   #You can use MySQL to make it global or you can use SQLite to make it local.
   #MySQL requires a server (local or external)
   #SQLite doesn't require anything, it's saved in a db file in the folder.
-  Type: "MySQL"
+  Type: "SQLite"
   Table: "alonsolevels"
   #If type is SQLite
   File: "database-alonsolevels"
   #If type is MySQL
   Host: 127.0.0.1
   Port: 3306
-  Database: "danuk2020"
+  Database: "alonsolevels"
   Username: "root"
-  Password: "root"
+  Password: "12345"
+  #Time in minutes to keep the connection alive before closing it. Minimum 1, maximum 45.
+  #This is to prevent issues with database related to "wait_timeout". Recommended 5 minutes.
+  Connection-pool: 5
 
 Updates:
   #Auto update configuration? Enabling will delete comments.
@@ -317,4 +416,4 @@ Updates:
   #Permission required to receive update message.
   Permission: "alonsolevels.update"
   #Message to send when update is found.
-  Message: "&3[AlonsoLevels] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
+  Message: "&6[AlonsoLevels] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
