@@ -16,3 +16,4 @@ This plugin adds a level system you can use across multiple servers with custom 
 
 ## Plugin statistics
 ![bStats.org](https://bstats.org/signatures/bukkit/AlonsoLevels.svg)
+![bStats.org](https://bstats.org/signatures/bukkit/AlonsoLevelsPro.svg)
