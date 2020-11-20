@@ -1,0 +1,20 @@
+#Welcome to colors.yml! This file will allow you to change colors for every level or range.
+#Make sure you follow the format to make it work correctly. HEX colors are supported.
+#This is the default color.
+Default: "&7"
+#These colors will be used for each level.
+#This was especially made to easily create colors for ranges.
+#According to default configuration it would work like this:
+#If you have any level lower than 10, you'll get Default color.
+#If you have any level between 10 and 25 (exclusive, 25 not included) you'll get "&a" color.
+#If you have any level between 25 and 50 (exclusive, 50 not included) you'll get "&3" color.
+#An so on.. That's how it works.
+Colors:
+  10: "&a"
+  25: "&3"
+  50: "&9"
+  75: "&c"
+  100: "&b"
+  150: "&d"
+  250: "&6"
+  500: "&5"
