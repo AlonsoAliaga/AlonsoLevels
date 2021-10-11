@@ -6,27 +6,28 @@
 #          / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-<        Youtube: https://alonsoaliaga.com/play
 #         /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/        Test server: plugins.alonsoaliaga.com
 #                           by AlonsoAliaga                       Twitch: https://alonsoaliaga.com/twitch
-#       Considering donating? https://alonsoaliaga.com/donate     Want even more features= Consider purchasing Pro version on https://alonsoaliaga.com/AlonsoLevelsPro
+#       Considering donating= https://alonsoaliaga.com/donate     Want even more features= Consider purchasing Pro version on https://alonsoaliaga.com/AlonsoLevelsPro
 #
 #       中文汉化Config提供 
 #       By:XiaoXian 
 #       - 有错误请及时反馈至QQ2860488343
 #
-#       - Version:3.0
+#       - Version:4.0
 #       - Log:
 #      1.整体翻译完毕
 #      2.修复编码问题,如果出现乱码请使用notepad++进行编码，转码成"ANSI"
 #      3.特殊符号乱码问题已修复
 #      4.注释翻译完毕
+#      5.修复部分机翻语句问题
 #
 #       - 提示:可使用替换功能把 "YourNetwork" 换成你的服务器名称
 Messages:
   No-permission: "&c您无权执行此操作."
   Reloaded: "&a一些消息和选项已重新加载。其他可能需要重新启动!"
   Invalid-player: "&c玩家不在线!"
-  Invalid-amount: "&cAmount 不是有效数字!"
-  Invalid-negative-amount: "&c金额不能为负数!"
-  Please-reconnect: "&c出了点问题。请重新连接到服务器!"
+  Invalid-amount: "&c所输入的内容不是一个有效的数字!"
+  Invalid-negative-amount: "&c所输入的数值不能是负数!"
+  Please-reconnect: "&c出现未知故障。请重新连接到服务器!"
   Please-reconnect-other: "&c玩家未注册。{PLAYER}必须进入服务器!"
   Disabled-world: "&c你不能在你当前的世界中使用这个命令."
   Game-mode-enabled: "&c你不能在玩游戏时使用这个命令."
@@ -42,7 +43,7 @@ Messages:
     - "&6 /alonsolevels setexp <玩家> <数值> &f- &e设置玩家的经验"
     - "&6 /alonsolevels addlevel <玩家> <数值> &f- &e添加玩家等级"
     - "&6 /alonsolevels removelevel <玩家> <数值> &f- &e删除玩家等级"
-    - "&6 /alonsolevels setlevel <玩家> <level> &f- &e设置玩家等级"
+    - "&6 /alonsolevels setlevel <玩家> <等级> &f- &e设置玩家等级"
     - "&6 /alonsolevels reload &f- &e重载配置"
     User:
     - "&6 /alonsolevels rewards &f- &e打开等级奖励菜单"
