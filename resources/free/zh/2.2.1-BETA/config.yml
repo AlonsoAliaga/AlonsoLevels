@@ -1,0 +1,537 @@
+################################################################################################################
+# Message from developer: This translation was provided by a community member. I can't say it's 100% accurate.
+################################################################################################################
+#            _   _                  _                _            Our plugins: https://alonsoaliaga.com/plugins
+#           /_\ | |___ _ _  ___ ___| |   _____ _____| |___        Support server: https://alonsoaliaga.com/discord
+#          / _ \| / _ \ ' \(_-</ _ \ |__/ -_) V / -_) (_-<        Youtube: https://alonsoaliaga.com/play
+#         /_/ \_\_\___/_||_/__/\___/____\___|\_/\___|_/__/        Test server: plugins.alonsoaliaga.com
+#                           by AlonsoAliaga                       Twitch: https://alonsoaliaga.com/twitch
+#       Considering donating? https://alonsoaliaga.com/donate     Want even more features= Consider purchasing Pro version on https://alonsoaliaga.com/AlonsoLevelsPro
+#
+#       中文汉化Config提供 
+#       By:XiaoXian 
+#       - 有错误请及时反馈至QQ2860488343
+#
+#       - Version:3.0
+#       - Log:
+#      1.整体翻译完毕
+#      2.修复编码问题,如果出现乱码请使用notepad++进行编码，转码成"ANSI"
+#      3.特殊符号乱码问题已修复
+#      4.注释翻译完毕
+#
+#       - 提示:可使用替换功能把 "YourNetwork" 换成你的服务器名称
+Messages:
+  No-permission: "&c您无权执行此操作."
+  Reloaded: "&a一些消息和选项已重新加载。其他可能需要重新启动!"
+  Invalid-player: "&c玩家不在线!"
+  Invalid-amount: "&cAmount 不是有效数字!"
+  Invalid-negative-amount: "&c金额不能为负数!"
+  Please-reconnect: "&c出了点问题。请重新连接到服务器!"
+  Please-reconnect-other: "&c玩家未注册。{PLAYER}必须进入服务器!"
+  Disabled-world: "&c你不能在你当前的世界中使用这个命令."
+  Game-mode-enabled: "&c你不能在玩游戏时使用这个命令."
+  Only-console: "&c出于安全原因，此命令只能在控制台中执行."
+  Help:
+    Admin:
+    - "&6 /alonsolevels rewards <玩家> &f- &e查看玩家等级奖励"
+    - "&6 /alonsolevels stats <玩家> &f- &e查看玩家数据"
+    - "&6 /alonsolevels reset <玩家> &f- &e重置玩家统计数据 &c(仅限控制台)"
+    - "&6 /alonsolevels addexp <玩家> <数值> &f- &e为玩家添加经验"
+    - "&6 /alonsolevels addrandomexp <玩家> <最小值> <最大值> &f- &e向玩家添加随机经验"
+    - "&6 /alonsolevels removeexp <玩家> <数值> &f- &e删除玩家的经验"
+    - "&6 /alonsolevels setexp <玩家> <数值> &f- &e设置玩家的经验"
+    - "&6 /alonsolevels addlevel <玩家> <数值> &f- &e添加玩家等级"
+    - "&6 /alonsolevels removelevel <玩家> <数值> &f- &e删除玩家等级"
+    - "&6 /alonsolevels setlevel <玩家> <level> &f- &e设置玩家等级"
+    - "&6 /alonsolevels reload &f- &e重载配置"
+    User:
+    - "&6 /alonsolevels rewards &f- &e打开等级奖励菜单"
+    - "&6 /alonsolevels stats &f- &e查看你的统计数据"
+  Leaderboard:
+    Signs:
+      Level:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b等级 {SCORE}"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&c没有玩家"
+        - "&b未知"
+        - "&c-------------"
+      Experience:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} XP"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&c没有玩家"
+        - "&b未知"
+        - "&c-------------"
+  Placeholders:
+    Multiplier:
+      None: "&7{MULTIPLIER}"
+      Multiplier: "&6{MULTIPLIER}"
+    Additional-multiplier:
+      None: "&7+{MULTIPLIER}"
+      Multiplier: "&6+{MULTIPLIER}"
+    Leaderboards:
+      Level:
+        No-name: "&7未知"
+        No-score: "&7未知"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7没有可用数据"
+      Experience:
+        No-name: "&7未知"
+        No-score: "&7未知"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7没有可用数据"
+  Claim:
+    Locked-reward: "&c你还不能领取这个奖励!"
+    Already-claimed-reward: "&c你已经领取了这个奖励!"
+    Claimed-reward: "&a你领取了这个奖励!"
+    Disabled-server: "&c你不能在这里领取这个奖励！请在 {SERVER} 领取."
+  Add-exp:
+    Cancelled: "&c您的操作已被插件取消!"
+    Added-exp: "&a你为 {PLAYER} 添加了 {EXPERIENCE} 经验值."
+    Notify: " &8+&3{EXPERIENCE} YourNetwork 经验!"
+  Add-random-exp:
+    Cancelled: "&c您的操作已被插件取消!"
+    Added-exp: "&a你为 {PLAYER} 添加了 {EXPERIENCE} 经验值."
+    Notify: " &8+&3{EXPERIENCE} YourNetwork 经验!"
+  Remove-exp:
+    Cancelled: "&c您的操作已被插件取消!"
+    Removed-exp: "&a你从 {PLAYER} 中移除了 {EXPERIENCE} 点经验值."
+    Notify: " &8-&3{EXPERIENCE} YourNetwork 经验!"
+  Set-exp:
+    Cancelled: "&c您的操作已被插件取消!"
+    Set-exp: "&a您将 {PLAYER} 的经验设置为 {EXPERIENCE} ."
+    Notify-add: " &8+&3{EXPERIENCE} YourNetwork 经验!"
+    Notify-remove: " &8-&3{EXPERIENCE} YourNetwork 经验!"
+  Add-level:
+    Cannot-add-zero: "&c你不能将 {LEVEL} 级添加到 {PLAYER}."
+    Added-level: "&a您为 {PLAYER} 添加了 {LEVEL} 个等级."
+    Notify-add: " &8+&3{LEVEL} YourNetwork 经验(s)!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork 经验(s)!"
+  Remove-level:
+    Cannot-remove-zero: "&c你不能向 {PLAYER} 添加 {LEVEL} 级."
+    Removed-level: "&a你从 {PLAYER} 中移除了 {LEVEL} 个级别."
+    Notify-add: " &8+&3{LEVEL} YourNetwork 经验(s)!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork 经验(s)!"
+  Set-level:
+    Set-level: "&a您将 {PLAYER} 的级别设置为 {LEVEL} ."
+    Notify-add: " &8+&3{LEVEL} YourNetwork 经验(s)!"
+    Notify-remove: " &8-&3{LEVEL} YourNetwork 经验(s)!"
+  Reset:
+    Cancelled: "&c您尝试重置 {PLAYER} 统计数据的操作被插件取消."
+    Player-reset: "&a&l你重置了 {PLAYER} 的统计数据！请玩家重新进入服务器来保存新数据."
+    #让玩家重新连接服务器以保存新的数据。 占位符 {PLAYER} 玩家名，{UUID} 玩家 uuid支持
+    #PlaceholderAPI。 但是由于玩家刚刚加入，它可能无法正常工作
+    Kick-reason:
+    - "&fInternal Exception: java.io.IOException: 一个现有的连接被远程主机强行关闭"
+  Keys:
+    Progress-bar:
+      Amount: 40
+      Character: "|"
+      Complete: "&3"
+      Remaining: "&7"
+    Progress:
+      Format: "&a{LEVEL_EXPERIENCE}&7/&b{REQUIRED_EXPERIENCE}"
+      Max-level: "&c&l最大经验"
+      Max-level-short: "&c&l最大经验"
+  Stats:
+    #如果可用，支持 PlaceholderAPI.
+    Self:
+    - "&3&l=================================================&r"
+    - " &a你的统计数据"
+    - "&a"
+    - " &7等级：&a{LEVEL}"
+    - " &7下一级： &a{NEXT_LEVEL}"
+    - " &7进度: &b{PROGRESS} &3{PERCENT}%"
+    - "&b"
+    - " &7当前等级经验：&a{LEVEL_EXPERIENCE}"
+    - " &7升级经验：&a{REQUIRED_EXPERIENCE}"
+    - " &7当前总经验：&a{TOTAL_EXPERIENCE}"
+    - "&3&l=================================================&r"
+    #如果可用，支持 PlaceholderAPI.
+    Self-max-level:
+    - "&3&l=========================================&r"
+    - "           &a你的统计数据"
+    - "        &c&l已经达到最大等级!"
+    - "  &7等级: &a{LEVEL}"
+    - "  &7总经验: &a{TOTAL_EXPERIENCE}"
+    - "&3&l=========================================&r"
+    #如果可用，支持 PlaceholderAPI.
+    Other:
+    - "&3&l=================================================&r"
+    - "          &a{PLAYER}' 的统计数据"
+    - "&a "
+    - "  &7等级: &a{LEVEL}"
+    - "  &7下一级: &a{NEXT_LEVEL}"
+    - "  &7进度: &b{PROGRESS} &3{PERCENT}%"
+    - "&b "
+    - "  &7当前等级经验: &a{LEVEL_EXPERIENCE}"
+    - "  &7升级经验: &a{REQUIRED_EXPERIENCE}"
+    - "  &7当前总经验: &a{TOTAL_EXPERIENCE}"
+    - "&3&l=================================================&r"
+    #如果可用，支持 PlaceholderAPI.
+    Other-max-level:
+    - "&3&l=========================================&r"
+    - "      &a{PLAYER} 的统计数据"
+    - "       &c&l已经达到最大等级!"
+    - "  &7等级: &a{LEVEL}"
+    - "  &7总经验: &a{TOTAL_EXPERIENCE}"
+    - "&3&l=========================================&r"
+  Level-up:
+    #离开 "” 禁用。可用占位符："{NEW_LEVEL}”替换为新等级
+    Title: "&6&l升级!"
+    Subtitle: "&r"
+    #{CENTER} 可以在此处使用以尝试将消息置于此消息中.
+    Multiplier-unlocked: "{CENTER}&6{MULTIPLIER}x &7硬币加成 &a解锁&7!"
+    Max-level-reached: "{CENTER}&c您已达到最高等级!"
+    Open-rewards-not-spigot: "{CENTER}&e打开奖励菜单以领取它们"
+    Open-rewards-spigot: "{CENTER}&e点击此处领取您的奖励"
+    Open-rewards-hover: "&e点击打开奖励!"
+    #这是一个 BETA 功能，可能无法正常工作。
+    #支持 PlaceholderAPI 可用
+    Message:
+    - "{CENTER}&a&l=========================================================================&r"
+    - "{CENTER}&a&k0&r &6升级! &a&k0&r"
+    - "&r "
+    - "{CENTER}&7你现在的 &3YourNetwork 等级是 &a{LEVEL}&7!"
+    - "{MAX_LEVEL}"
+    - "&r "
+    - "{UNLOCKED}\n"
+    - "{REWARDS}"
+    - "{CENTER}&a&l=========================================================================&r"
+
+Inventories:
+  Normal:
+    Title: "&8YourNetwork 等级"
+  Veteran:
+    Title: "&8老玩家奖励"
+
+# -Material:仅在 1.14+ 中支持，如果您想使用自定义资源包
+# -Custom-model-data:仅当材料为 CUSTOM_HEAD 时可用
+Items:
+  Rewards:
+    Normal:
+      Locked:
+        Material: "STORAGE_MINECART" #支持 "CUSTOM_HEAD"
+        Custom-model-data: 0
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"
+      Unlocked:
+        Material: "STORAGE_MINECART" #支持 "CUSTOM_HEAD"
+        Custom-model-data: 0
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJjNWY3YWM3MDZiMmU4YTg3OGViZjk3MmIwN2YzZDM2NDQ5YWI3MGIwOWFjZDk3M2VlYWJiMGQ1ZmM0YTZiNCJ9fX0="
+      Claimed:
+        Material: "MINECART" #支持 "CUSTOM_HEAD"
+        Custom-model-data: 0
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19"
+    Veteran:
+      Locked:
+        Material: "TNT_MINECART" #支持 "CUSTOM_HEAD"
+        Custom-model-data: 0
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiZDg3Y2Q4YzE0N2U3NmM1N2UxYmI1NDE1YmJjYzU0YjhjNDNjNTYxNzc2NzcyNTczMjNjZDI2OWFlNCJ9fX0="
+      Unlocked:
+        Material: "TNT_MINECART" #支持 "CUSTOM_HEAD"
+        Custom-model-data: 0
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhY2ZjNjQzZjYwOGUxNmRlMTkzMzVkZGNhNzFhODI4ZGZiOGRhY2E1NzkzZWI1YmJjYjBjN2QxNTU5MjQ5In19fQ=="
+      Claimed:
+        Material: "MINECART" #支持 "CUSTOM_HEAD"
+        Custom-model-data: 0
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19"
+    Locked-lore:
+    - ""
+    - "&c你现在还不能领取这个!"
+    Unlocked-lore:
+    - ""
+    - "&e点击领取!"
+    Claimed-lore:
+    - ""
+    - "&a您已经领取了此奖励!"
+  Multipliers:
+    Locked:
+      Material: "COAL_BLOCK" #支持 "CUSTOM_HEAD"
+      Custom-model-data: 0
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRhN2RmMGM2NzYxNjMwNWNlZTI5ZTRlYTJlMzQwNjE1NDYzNjY5NWVmZWY5ZmY3MzVlZmQwMDc0YjAwMjg0YSJ9fX0="
+    Unlocked:
+      Material: "GOLD_BLOCK" #支持 "CUSTOM_HEAD"
+      Custom-model-data: 0
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ1ZjQ3ZmViNGQ3NWNiMzMzOTE0YmZkYjk5OWE0ODljOWQwZTMyMGQ1NDhmMzEwNDE5YWQ3MzhkMWUyNGI5In19fQ=="
+    Displayname: "&6{MULTIPLIER}x {COLOR}Coin Multiplier"
+    Lore:
+    - ""
+    - "&7增加你的金币数量"
+    - "&7在玩游戏时赚取."
+    - ""
+    - "&8到达后自动解锁"
+    - "&8所需等级."
+    Locked-lore:
+    - ""
+    - "&c你必须达到 {LEVEL} 级才能解锁"
+    - "&c这个特权."
+    Unlocked-lore:
+    - ""
+    - "&a已解锁!"
+    Veteran:
+      Material: BEACON #支持 "CUSTOM_HEAD"
+      Custom-model-data: 0
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI2NWY5NmY1NGI3ODg4NWM0NmU3ZDJmODZiMWMxZGJmZTY0M2M2MDYwZmM3ZmNjOTgzNGMzZTNmZDU5NTEzNSJ9fX0="
+      Displayname: "&6老玩家奖励"
+      #  由于我实在想不出"dedicated"这个单词是什么意思
+      #  我英语不咋好，机翻是 "专用，投入，敬业”
+      #  如有大佬认识请联系我进行修改
+      Lore:
+      - "&7Rewards for the most dedicated"
+      - "&7玩家!"
+      Locked:
+      - ""
+      - "&c你的等级必须是 {LEVEL} 或"
+      - "&c才可以访问此菜单!"
+      Unlocked:
+      - ""
+      - "&e点击打开老玩家奖励!"
+  Previous:
+    Material: ARROW #支持 "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3M2NmNjZkMzFiODNjZDhiODY0NGMxNTk1OGMxYjczYzhkOTczMjNiODAxMTcwYzFkODg2NGJiNmE4NDZkIn19fQ=="
+    Displayname: "&aPrevious page"
+  Next:
+    Material: ARROW #支持 "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg2MTg1YjFkNTE5YWRlNTg1ZjE4NGMzNGYzZjNlMjBiYjY0MWRlYjg3OWU4MTM3OGU0ZWFmMjA5Mjg3In19fQ=="
+    Displayname: "&aNext page"
+    
+    #Command-
+    #当单击后退按钮时，此命令将由玩家运行。 "None” = 禁用。
+    #如果您需要使用{PLAYER}替换为玩家名称或 {UUID}替换为玩家uuid。
+  Back:
+    Material: ARROW #支持 "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+    Displayname: "&aVolver"
+    Command: "none"
+  Extra:
+    Enabled: true
+    Material: ENCHANTED_BOOK #支持 "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0="
+    Displayname: "&aQuests & Challenges"
+    #支持 PlaceholderAPI 可用
+    Lore:
+    - "&7完成任务和挑战"
+    - "&7 会奖励你 &6Coins&7, &3YourNetwork"
+    - "&3体验&7等等！"
+    - ""
+    - "&7你最多可以完成&a10"
+    - "&7每天都有挑战。"
+    - ""
+    - "&7今天完成的挑战：&a%placeholder_quest%"
+    - ""
+    - "&e点击查看任务和挑战"
+    Command: "none"
+  Main:
+    Material: BREWING_STAND #支持 "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNlZGIyZjRjOTcwMTZjYWU3Yjg5ZTRjNmQ2OTc4ZDIyYWMzNDc2YzgxNWM1YTA5YTY3OTI0NTBkZDkxOGI2YyJ9fX0="
+    Displayname: "&aYourNetwork Leveling"
+    #支持 PlaceholderAPI is available.
+    Lore:
+    - "&7玩游戏和完成任务"
+    - "&7将收到您的 &3YourNetwork"
+    - "&3经验&7，需要升级"
+    - "&7提升并获得新的福利和奖励!"
+    - ""
+    - "&3YourNetwork &a%alonsolevels_level% %alonsolevels_progress_bar% %alonsolevels_progress_percent%%"
+    - ""
+    - "&7距离下次升级还需经验: &3%alonsolevels_experience_to_level_up%"
+    - ""
+    - "&e点击查看您的奖励!"
+   #此物品将替代"老玩家”物品。 如果 Options.Veteran-rewards 设置为 false。
+   #If Veteran-rewards 是真的，这将被忽略。
+  Veteran-replacement:
+    Enabled: true
+    Material: CUSTOM_HEAD #支持 "CUSTOM_HEAD"
+    Custom-model-data: 0
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJkODQ3YjJjNzk4Njc4ZmQ1MmIwZTczNDhkY2Y5ZjUyMmY4NmE5Nzk4ZGE5YmIwM2NkZmJiYTI5MTFkZWM2NiJ9fX0="
+    Displayname: "&b你太棒了!"
+    #支持 PlaceholderAPI 可用.
+    Lore:
+    - "&7感谢您与我们一起玩 %player_name%!"
+    Command: "none"
+
+Options:
+  Aliases:
+  - "alevels"
+  - "alevel"
+  - "alonsolevel"
+  - "level"
+  - "levels"
+  #这个服务器的名字是什么-如果奖励仅限于特定服务器，将用于禁用奖励。
+  Server: "Lobby"
+  #玩家可以升级的最高等级。 建议保留为 500。
+  Max-level: 500
+  Exp-formula:
+     #如果启用"Expression”将被使用。 在修改之前确保你知道你在做什么。
+     #不要寻求如何表达的支持。 如果你不知道怎么做，那就不要去做。
+    Enabled: true
+     #LEVEL 将替换为实际级别。
+     #Example: "(LEVEL-1) * 300" 表示：
+     #Level 1 = 所需的 exp 始终为 0。
+     #Level 2 = (2-1)*300 = 需要 300 exp
+     #Level 3 = (3-1)*300 = 600 exp
+     #等等..
+     #WARNING：此公式是使用 eval 方法在内部处理的。
+     #这意味着如果不谨慎使用，它可以用于在内部修改所有内容。
+     #包括文件、文件夹等。确保只有您可以访问。 你被警告了！
+     #建议保持默认，基于大网公式。
+    Expression: "1250*(Math.pow(LEVEL,2))+ (6250*LEVEL) - 7500"
+     #重要的：
+     #名字说明了一切。 除非您知道自己在做什么，否则请勿启用此功能。
+     #这将删除levels.yml中的所有内容并根据您的exp公式重新生成它，您可以进行修改。
+     #确保在文件生成后禁用此功能，否则它将不断重置您的 levels.yml 文件。
+     #如果您的系统不支持javascript表达式，这将不起作用。 只需使用默认的 levels.yml 并禁用它。
+    Update-levels-file-based-on-formula: false
+     #查看老玩家库存所需的级别（奖励 - 乘数）
+  Veteran-inventory: 100
+     #禁用普通用户的命令。 （未经管理员许可的玩家）
+     #如果您为大型网络等每个游戏使用一台服务器，则很有用。
+     #如果您使用的是多竞技场小游戏或类似系统，请将其设置为 false 并使用"Disabled-worlds”
+  Game-mode: false
+     #普通用户可以执行与此插件相关的命令的世界，因此他们无法打开
+     #rewards gui 或在地图中玩游戏时检查统计数据。
+     #这不会影响具有管理员权限的玩家。
+     #Option 可用于限制普通玩家在 Skywars 或迷你游戏等服务器中使用命令。
+  Enabled-worlds:
+  - "lobby"
+  - "main_lobby"
+  - "world"
+     #如果数据无法加载，这将在玩家加入后被立即踢出。 （或者数据库有错误）
+  Kick-on-fail:
+    Enabled: true
+    Reason:
+     #支持 PlaceholderAPI，它可能不适用于许多插件，因为很可能
+     #在玩家被踢的那一刻，占位符没有加载。 （因为他刚加入）
+     #Available 占位符：{PLAYER} 玩家名称，{UUID} 玩家 uuid
+    - "&c无法加载/注册信息。"
+    - "&f请重新连接到服务器。"
+    - "&r"
+    - "&7如果问题仍然存在，请联系管理员。"
+  Veteran-rewards:
+     #如果为false，则不会显示退伍军人奖励的项目。
+     #这也禁用了老手奖励的乘数。
+    Enabled: true
+  Multipliers:
+    #设置为 false 以禁用普通乘数。
+    Normal: true
+    #设置为 false 以禁用老玩家乘数。
+    #If 为 true，只有当"Veteran-rewards.Enabled”也为 true 时，它们才会起作用。
+    Veteran: true
+  Debug:
+     #如果为true，将在控制台中发送一些检查。 如果为 false，则不会发送垃圾邮件。
+     #当前包含插件启动时的级别/所需经验垃圾邮件。
+    Enabled: false
+  Leaderboards:
+    #如果启用，将加载排行榜。
+    Enabled: true
+    #第一次尝试从数据库加载数据之前的分钟数。
+    First-delay: 2
+    #插件尝试加载信息和更新排行榜之间的时间间隔（以分钟为单位）。
+    #推荐10分钟。 请记住，这是排行榜所必需的。
+    Interval: 10
+  Auto-save:
+    #自动保存玩家数据的时间（以分钟为单位）。 最小 0（如果为零，它将被禁用）。 推荐 7.
+    #记住这是排行榜所必需的！！！
+    Interval: 7
+  Experience-bar:
+    #开启体验栏显示关卡进度=
+    #这是使用数据包制作的。 （需要ProtocolLib）
+    #这可能会导致使用铁砧或类似系统玩家体验的插件出现问题。
+    Enabled: false
+    #启用的世界。 经验栏将显示在这个世界中。
+    #要在所有设置为 => Worlds 的世界中启用它：[]
+    Worlds:
+    - "world"
+    - "lobby"
+  Compatibility:
+     #推荐如果您使用的是 EssentialsChat。 我的一些插件添加了这种支持。
+     #确保仅在必要时启用。 另外，一个就够了。 如果您在
+     #我的插件之一，您可以在所有其他插件中禁用此选项。
+     #这允许您使用 PlaceholderAPI 中的任何占位符，但将其替换为括号而不是百分比符号。
+     #示例：%aplaceholder% => {aplaceholder}
+     #这包括不是来自 AlonsoLevels 的那些。
+    Chat: false
+   #这是插件在加载数据之前将等待的滴答数。
+   #如果您在服务器更改或重新连接时遇到玩家"丢失”统计数据的问题，则很有用。
+   #设置为0禁用。 如果启用，就好像某些在加入时发送消息的插件不会从占位符中获取正确的数据。
+   #要"修复”此问题，请使用我们团队制作的此插件，该插件会在玩家加入时添加消息并提供设置延迟的选项。
+   #我们还支持占位符检查以防止在玩家处于消失模式时发送消息。 （使用占位符检查玩家是否消失）
+   #在 https://alonsoaliaga.com/AlonsoJoin 上查看我们的插件（如果可用）
+  Data-delay: 20
+
+Permissions:
+  Admin: "alonsolevels.admin"
+  Stats-others: "alonsolevels.stats.others"
+
+Database:
+   #可用类型：MySQL 和 SQLite
+   #您可以使用 MySQL 使其成为全局，也可以使用 SQLite 使其成为本地。
+   #MySQL 需要一个服务器（本地或外部）
+   #SQLite 不需要任何东西，它保存在文件夹中的 db 文件中。
+  Type: "MySQL"
+  Table: "alonsolevels"
+  #If type is SQLite
+  File: "database-alonsolevels"
+  #If type is MySQL
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "alonsolevels"
+  Username: "alonsolevels"
+  Password: "alonsolevels"
+   #如果你知道自己在做什么，就修改它。
+   #这将添加在数据库url的末尾（不在SQLITE中，仅在MySQL中）。
+   #如果您想设置 useSSL 或 autoReconnect 或任何其他修饰符，则很有用。
+   #此选项不再使用，因为 HikariCP 已实施。 请使用"HikariCP.Source-properties”选项。
+  Additional-url: ""
+   #此选项已添加以防止连接超时。
+   #时间以分钟为单位。 每 X 分钟，插件将运行一个测试查询以保持连接活动。
+   #不再使用，因为实施了 HikariCP。
+  Keep-connection-interval: 30
+  HikariCP:
+    Warning:
+    - "================================================ ========================================"
+    - "你不需要编辑这个文本，它只显示在配置中，所以你可以阅读它。"
+    - "================================================ ========================================"
+    - "HikariCP 是实验性的。请记住，如果您知道它是如何工作的，请仅修改以下内容。"
+    - "您将不会获得对 HikariCP 配置的支持，因为 1) 我不是 HikariCP 高级用户"
+    - "和 2）定制取决于所有者和他的知识水平。"
+    - "与Source-properties相关，如果您知道并想添加自定义属性，请遵循以下格式："
+    - "源属性："
+    - ' thePropertySelected1: "theValue1"'
+    - ' thePropertySelected2: "theValue2"'
+    - "[!] 记住只有在你知道自己在做什么的情况下才能修改数据。"
+    - "可用的源属性可以在这里找到：https://alonsoaliaga.com/HikariCP-sp"
+    - "可用的源类名称可以在这里找到：https://alonsoaliaga.com/HikariCP-cn"
+    Max-pool-size: 15
+     #仅当您知道它是什么时才设置您的自定义源类名称。
+    Custom-source-class-name: "default"
+     #这是修改您的 HikariCP 配置的源属性。
+     #如果您知道自己在做什么，它允许您选择和指定自定义配置。
+     #Source 属性可以在这里找到：https://links.alonsoaliaga.com/HikariCP-sp
+    Source-properties: []
+
+Updates:
+  #自动更新配置-启用将删除评论。
+  Auto-update-configuration: true
+  #检查更新-建议保持启用状态。
+  Check-updates: true
+  #当有权限的玩家加入服务器时通知更新
+  Notify-updates: true
+  #接收更新消息所需的权限
+  Permission: "alonsolevels.update"
+  #发现更新时发送的消息.
+  Message: "&6[AlonsoLevels] &e发现了一个新的版本更新！ 您正在使用版本 {CURRENT}。 在此处下载 {NEW} 版 &c{LINK}"
